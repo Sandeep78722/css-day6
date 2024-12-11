@@ -1,0 +1,20 @@
+.container>span{
+    background-color: rosybrown;
+    
+}
+.container p{
+    background-color: blueviolet;
+}
+.content > .highlight{
+    background-color: aquamarine;
+}
+.wrapper  > section > h1 {
+    background-color: chartreuse;
+}
+.main-title ~ p {
+    background-color: crimson;
+}
+header + div{
+    color: rgb(250, 5, 197);
+    border: 1px solid saddlebrown;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!--write a CSS rule using both the descendant and child combinators to select only the <span> elements inside the .container class, but exclude any that are inside nested <div> elements.-->
+    <h3>1<sup>st</sup> answer</h3>
+    <div class="container">
+        <span>First span</span>
+        <div>
+            <span>Nested span inside div</span>
+        </div>
+<span>Second span</span><hr/>
+
+        <!--How can you use the general sibling combinator to style all <p> elements that appear after a <h3> element, but not those that are direct siblings of the <h3>?-->
+         <h3>2 <sup>nd</sup>answer</h3>
+        <h3>Heading 3</h3>
+        <p>This paragraph is not selected.</p>
+        <div>
+            <h3>Another Heading</h3>
+            <p>This paragraph is selected.</p>
+        </div>
+    </div>
+    <hr>
+
+    <!--Write a CSS rule to select all <span> elements that are children of a <div> with the class .content and also have a class .highlight.-->
+    <h3>3 <sup>rd</sup>answer</h3>
+
+        <div class="content">
+            <span class="highlight">This is highlighted.</span>
+            <span>This is not highlighted</span>
+          </div>
+          <div class="content">
+            <span class="highlight">This is another highlighted span.</span>
+          <span>not hightlighted</span>
+        </div><hr>
+
+
+        <!--Write a CSS rule using the child combinator to select all <h1> elements that are direct children of a <section> but only if they are also inside a <div> with the class .wrapper.-->
+        <h3>4 <sup>th</sup> answer</h3>
+        <div class="wrapper">
+            <section>
+              <h1>Heading 1 inside wrapper</h1>
+              <div>
+                <h1>Heading 1 inside nested div</h1>
+              </div>
+            </section>
+          </div>
+          <section>
+            <h1>Heading 1 not inside wrapper</h1>
+          </section><hr>
+
+          <!--Write a CSS rule that selects all <p> elements that are siblings of an <h2> element with the class .main-title and are inside a <div> element-->
+          <h3>5 <sup>th</sup>answer</h3>
+            <div>
+            <h2 class="main-title">Main Title</h2>
+            <p>This paragraph is selected because it follows the h2 inside a div.</p>
+            <h2>Another Title</h2>
+            <p>This paragraph is not selected.</p>
+          </div>
+          <div>
+            <h2 class="main-title">Main Title 2</h2>
+            <p>This paragraph is selected because it follows the h2 inside another div.</p>
+          </div>
+    </div><hr>
+
+    <!--Write a CSS rule to select all <div> elements that immediately follow a <header> tag.-->
+    <h3>6 <sup>th</sup> answer</h3>
+    <header>This is a header</header>
+<div>This div follows the header.</div>
+<footer>This is a footer</footer>
+<div>This div does not immediately follow the header.</div>
+          
+
+          
+                            
+</body>
+
+</html>
